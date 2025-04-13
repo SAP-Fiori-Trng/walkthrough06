@@ -1,0 +1,18 @@
+<mvc:View
+    xmlns="sap.m"
+    xmlns:mvc="sap.ui.core.mvc"
+    controllerName="dw.ui5.walkthrough.06.controller.App">
+
+            <VBox>
+                <Button 
+                    text="{i18n>sayHelloBtnText}" 
+                    press="onSayHelloPress">
+                </Button>
+                <Input
+                    value="{/recipient/name}"
+                    description="{i18n>helloTxt}{/recipient/name}"
+                    valueLiveUpdate="true"
+                    width="60%">
+                </Input>
+            </VBox>
+</mvc:View>
